@@ -55,6 +55,10 @@ spec:
                      app.push("latest")
                  }
             }
+
+            stage('Deploy') {
+                sh 'helm ls'
+            }
         }
     }
 }
